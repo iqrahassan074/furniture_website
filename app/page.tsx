@@ -59,19 +59,19 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">Shop by Category</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className=" text-white grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Chairs", icon: "🪑" },
-              { name: "Tables", icon: "📦" },
-              { name: "Sofas", icon: "🛋️" },
-              { name: "Storage", icon: "🗄️" },
+              { name: "Chairs", },
+              { name: "Tables",  },
+              { name: "Sofas",  },
+              { name: "Storage", },
             ].map((cat) => (
               <Link
                 key={cat.name}
                 href={`/shop?category=${cat.name.toLowerCase()}`}
-                className="group p-8 rounded-lg border border-border hover:border-primary hover:bg-muted transition text-center"
+                className="bg-black group p-8 rounded-lg border border-border hover:border-primary hover:bg-muted transition text-center"
               >
-                <div className="text-4xl mb-4">{cat.icon}</div>
+              
                 <h3 className="font-semibold text-lg group-hover:text-primary transition">{cat.name}</h3>
               </Link>
             ))}
