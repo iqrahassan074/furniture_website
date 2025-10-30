@@ -19,9 +19,9 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">F</span>
+              <span className="text-primary-foreground font-bold text-lg">Furnivio</span>
             </div>
-            <span className="font-bold text-xl hidden sm:inline">Furnivio</span>
+            <span className="font-bold text-xl hidden sm:inline"></span>
           </Link>
 
           {/* Desktop Navigation */}
